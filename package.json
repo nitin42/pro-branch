@@ -2,6 +2,16 @@
   "name": "react-split",
   "version": "1.0.0",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "control flow",
+    "branch",
+    "updates"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitin42/react-split"
+  },
   "author": "Nitin Tulswani",
   "license": "MIT",
   "devDependencies": {
