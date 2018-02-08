@@ -17,7 +17,7 @@ This also depends on `react` so make sure you already have installed it.
 This function is quite similar to [Recompose's `branch`](https://github.com/acdlite/recompose/blob/master/docs/API.md#branch) helper. It takes an array of objects where each object has two
 properties, `when` and `render`.
 
-`when` accepts a function which, when evaluated to true renders the component that was specified. It gets passed the owner props. Here is an example -
+`when` accepts a function which gets passed the owner props. If it returns true then it renders the component that was specified. It . Here is an example -
 
 ```js
 const React = require('react');
