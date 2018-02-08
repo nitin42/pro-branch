@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Splitz Branch function returns a new component when predicate is true 1`] = `
+<div>
+  Call of Duty: World War II
+</div>
+`;
+
+exports[`Splitz Branch function returns default component when predicate is false 1`] = `null`;
+
+exports[`Splitz applyUpdates calls setState when predicate is true 1`] = `
+<div>
+  Call of Duty: World War II
+</div>
+`;
+
+exports[`Splitz applyUpdates returns default state when the predicate is false 1`] = `
+<div>
+  DEFAULT
+</div>
+`;
