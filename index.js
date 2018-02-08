@@ -5,7 +5,7 @@ const isNil = value => value === null || value === undefined
 
 // Returns a new component which is rendered only when the predicate is true
 // Returns a function that produces React element and takes the props to apply on it.
-const Branch = states => DefaultComponent => props => {
+const createBranch = states => DefaultComponent => props => {
   const state = states.find(({ when }) => when(props))
   let output = isNil(state) ? DefaultComponent : state.render
   return React.createFactory(output)(props)
@@ -19,6 +19,6 @@ const applyUpdate = states => defaultState => props => {
 }
 
 module.exports = {
-  Branch,
+  createBranch,
   applyUpdate
 }

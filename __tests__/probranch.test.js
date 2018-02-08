@@ -3,7 +3,7 @@ const ReactTestRenderer = require('react-test-renderer')
 
 const {
   applyUpdate,
-  Branch
+  createBranch
 } = require('../index')
 
 // Dummy components
@@ -15,7 +15,7 @@ const Sports = (props) => <div>FIFA 18</div>
 // Renderless component
 const Default = () => null
 
-const branched = Branch([
+const branched = createBranch([
   {
     when: ({ type }) => type === 'FPS',
     render: FPS,

@@ -16,6 +16,6 @@ exports[`Splitz applyUpdates calls setState when predicate is true 1`] = `
 
 exports[`Splitz applyUpdates returns default state when the predicate is false 1`] = `
 <div>
-  DEFAULT
+  __DEFAULT__
 </div>
 `;
