@@ -88,6 +88,8 @@ ReactDOM.render(<Game type="FPS" />, document.getElementById('root'));
 
 I am using these two helpers in my current project and I think it organises the control flow structure in a better way rather than using `switch` or nested `if else`.
 
+**Don't want to use it as a dependency ? You can find the full source code [here](https://github.com/nitin42/pro-branch/blob/master/index.js#L8)**
+
 ## API
 
 ### createBranch
