@@ -12,9 +12,9 @@ This also depends on `react` so make sure you already have installed it.
 
 ## Usage
 
-`**createBranch**`
+**`createBranch`**
 
-This function is quite similar to [Recompose's `branch`]() helper. It takes an array of objects where each object has two
+This function is quite similar to [Recompose's `branch`](https://github.com/acdlite/recompose/blob/master/docs/API.md#branch) helper. It takes an array of objects where each object has two
 properties, `when` and `render`.
 
 `when` accepts a function which, when evaluated to true renders the component that was specified. It gets passed the owner props. Here is an example -
@@ -45,7 +45,7 @@ ReactDOM.render(<Game type="FPS" />, document.getElementById('root'));
 
 `createBranch` returns a function that takes the props to apply and creates a React element.
 
-`applyUpdate`
+**`applyUpdate`**
 
 This function is similar to `createBranch` but the only difference is that, the object has a `update` property instead of `render`. So in this case, if predicate is `true` then the update function is called. Here is an example
 
@@ -94,7 +94,7 @@ I am using these two helpers in my current project and I think it organises the 
 
 `
 createBranch(
-  objects: Array,
+  objects: Array
 )(DefaultComponent: React$Element)(props)
 `
 
